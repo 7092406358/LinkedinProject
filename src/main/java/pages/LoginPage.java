@@ -6,19 +6,19 @@
 	public class LoginPage {
 	    WebDriver driver;
 	    @FindBy(id = "username")
-	    WebElement usernameInput;
+	    private WebElement usernameInput;
 
 	    @FindBy(id = "password")
-	    WebElement passwordInput;
+	    private WebElement passwordInput;
 	    
 	    @FindBy(xpath ="//*[@id='organic-div']/form/div[4]/button")
-	    WebElement signin;
+	    private WebElement signin;
 
 	    @FindBy(id ="login_Layer")
-	    WebElement loginButton;
+	    private WebElement loginButton;
 	    
 	    @FindBy(xpath="//a[contains(@href,'signin')]")
-	    WebElement signInButton;
+	    private WebElement signInButton;
 	    
 	    @FindBy(xpath ="//button[text()='Login']")
 	    WebElement  clickLoginButton;
@@ -27,17 +27,21 @@
 	        this.driver = driver;
 	        PageFactory.initElements(driver, this);
 	    }
-
+        
+	    public void clickOnSignIn() 
+	    { 
+			  signInButton.click(); 
+		 } 
+	    
 	    public void enterUsername(String username) {
 	        usernameInput.sendKeys(username);
 	    }
 	    public void enterPassword(String password) {
 	        passwordInput.sendKeys(password);
 	    }
-	    public void clickOnSignIn() {
-	        signInButton.click();
-	    }
-	    public void clickSigninButton() {
-	    	signin.click();
-	    }
+		
+		  public void clickSigninButton() { 
+			  signin.click();
+			  }
+		 
 	} 

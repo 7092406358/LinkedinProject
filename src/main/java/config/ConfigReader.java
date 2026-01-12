@@ -30,5 +30,4 @@ public class ConfigReader {
         throw new RuntimeException("baseUrl not specified in config.properties");
     }
     
-   
 }
