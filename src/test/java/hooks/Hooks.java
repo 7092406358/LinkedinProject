@@ -6,18 +6,20 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import config.ConfigReader;
 import factory.DriverFactory;
-import utilities.BasePage;
+import base.BasePage;
 
 public class Hooks {
     public static WebDriver driver;
     @Before
     public void setUp() {
+    	
     	     String browser = ConfigReader.getProperty("browser");
     	     driver=DriverFactory.initDriver(browser);
     	     driver.get(ConfigReader.getProperty("url"));
-        
+    	     driver.manage().deleteAllCookies();
     }
-
+    
+    
     @After
     public void tearDown() {
         System.out.println("Closing browser...");

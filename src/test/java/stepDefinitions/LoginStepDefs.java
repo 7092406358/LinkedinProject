@@ -12,17 +12,16 @@ import com.google.j2objc.annotations.Property;
 import config.ConfigReader;
 import hooks.Hooks;
 import pages.LoginPage;
-import utilities.BasePage;
+import base.BasePage;
 
 public class LoginStepDefs {
     
     WebDriver driver = Hooks.driver;  // use the driver from Hooks
     LoginPage loginPage;
     
-     @Given("user is on the login page") 
+     @Given("user is logged in for login scenario") 
 	public void userisloggedin() throws InterruptedException 
 	{     
-    	 
          loginPage = new LoginPage(driver);
          loginPage.clickOnSignIn();
         

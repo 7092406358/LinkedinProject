@@ -36,15 +36,5 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/ARUN/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0.jar" sourcepath="C:/Users/ARUN/.m2/repository/io/github/bonigarcia/webdrivermanager/3.0.0/webdrivermanager-3.0.0-sources.jar">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="test" value="true"/>
-			<attribute name="maven.groupId" value="io.github.bonigarcia"/>
-			<attribute name="maven.artifactId" value="webdrivermanager"/>
-			<attribute name="maven.version" value="3.0.0"/>
-			<attribute name="maven.scope" value="test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

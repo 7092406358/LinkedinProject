@@ -1,4 +1,4 @@
-	package utilities;
+	package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,11 +13,9 @@ public class BasePage {
         driver = new EdgeDriver();
         driver.manage().window().maximize();
     }
-
     public void click(WebElement element) {
         element.click();
     }
-    
     
     public static void closeBrowser() {
         if (driver != null) {

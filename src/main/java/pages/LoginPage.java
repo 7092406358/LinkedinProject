@@ -27,19 +27,16 @@
 	        this.driver = driver;
 	        PageFactory.initElements(driver, this);
 	    }
-        
 	    public void clickOnSignIn() 
 	    { 
 			  signInButton.click(); 
-		 } 
-	    
+		 }
 	    public void enterUsername(String username) {
 	        usernameInput.sendKeys(username);
 	    }
 	    public void enterPassword(String password) {
 	        passwordInput.sendKeys(password);
 	    }
-		
 		  public void clickSigninButton() { 
 			  signin.click();
 			  }
