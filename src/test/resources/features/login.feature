@@ -11,5 +11,5 @@ Feature: Login Feature
   
    Examples:
   | email                      | password      |
-  | a1runkumarsaratha@gmail.com | Nehasree@19  |
+  | arunkumarsaratha@gmail.com | Nehasree@19  |
   
