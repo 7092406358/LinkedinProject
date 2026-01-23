@@ -9,5 +9,5 @@ Feature: Login Feature
   
    Examples:
   | email                      | password      |
-  | arunkumarsaratha@gmail.com | Nehasree@20  |
+  | arunkumarsaratha@gmail.com | Nehasree@19  |
   
