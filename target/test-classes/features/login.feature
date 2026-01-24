@@ -5,8 +5,6 @@ Feature: Login Feature
     When user enters the username "<email>" and password "<password>"
     Then user should be redirected to the dashboard
     
- 
-  
    Examples:
   | email                      | password      |
   | arunkumarsaratha@gmail.com | Nehasree@19  |

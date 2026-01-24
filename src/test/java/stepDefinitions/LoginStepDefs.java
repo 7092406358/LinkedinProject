@@ -26,7 +26,6 @@ public class LoginStepDefs {
          loginPage.clickOnSignIn();
         
 	}
-
      @When("user enters the username {string} and password {string}")
      public void user_enters_username_and_password(String username, String password) {
          loginPage.enterUsername(username);
