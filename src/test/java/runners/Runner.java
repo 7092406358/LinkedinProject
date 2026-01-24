@@ -12,8 +12,10 @@ plugin = { "pretty",
 		"html:target/cucumber-report.html"
 		, "json:target/cucumber.json" ,
 		"rerun:target/rerun.txt"},
+tags = "@smoke",
+monochrome = true)
 
-tags = "@smoke", monochrome = true)
+
 public class Runner {
 
 }

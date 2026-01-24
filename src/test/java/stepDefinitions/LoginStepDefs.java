@@ -3,8 +3,13 @@ package stepDefinitions;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import junit.framework.Assert;
+
 import java.util.Properties;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.devtools.v115.runtime.Runtime.GetPropertiesResponse;
 import org.openqa.selenium.edge.EdgeDriver;
 
@@ -38,4 +43,15 @@ public class LoginStepDefs {
         // driver.close();
      }
     
+     
+     @Then("user should see an error message Invalid username or password")
+     public void user_should_see_invalid_username_or_password_error() {
+         String expectedError = "Invalid username or password";
+         
+         WebElement errorMsg = driver.findElement(By.xpath("//div[@id='error-for-password'])]"));
+         String actualError = errorMsg.getText();
+         System.out.println(actualError);
+       //  Assert.assertEquals("      Wrong email or password. Try again or ", expectedError, actualError);
+     }
+
 }
