@@ -16,6 +16,6 @@ tags = "@smoke",
 monochrome = true)
 
 
-public class Runner {
+public class TestRunner {
 
 }
